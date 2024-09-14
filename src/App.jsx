@@ -44,10 +44,10 @@ if(maintask.length > 0){
     <li key={i} className="flex flex-col w-[100%] justify-between px-[1em] overflow-hidden">
       <div className="flex flex-row justify-between">
     <h5 className="lg:text-[calc(14px+0.205vw)]"><span className="relative right-[0.7em]">{i+1}.</span>{t.task}</h5>
-    <h6 className="w-fit lg:text-[calc(14px+0.2vw)] relative">{t.description}
+    <h6 className="flex w-fit lg:text-[calc(14px+0.2vw)] relative">{t.description}
     <button  onClick={()=>{
       delethandler(i);
-      }}><RiCloseLine className="cursor-pointer absolute bottom-0 left-[-0.3em] h-[1.3em] w-fit"/>
+      }}><RiCloseLine className="cursor-pointer relative left-[0.8em]  h-[1.3em] w-fit"/>
     </button>
     </h6>
     </div>
